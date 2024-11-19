@@ -24,12 +24,27 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="script.js"></script>
     <title>Omnifood</title>
   </head>
 
   <body>
     <header class="header">
-      <img src="img/omnifood-logo.png" class="logo" alt="omnifood logo" />
+      <a href="#">
+        <img src="img/omnifood-logo.png" class="logo" alt="omnifood logo" />
+      </a>
       <nav class="nav navbar">
         <ul class="nav-list">
           <li><a class="nav-link" href="#howitworks">How it works</a></li>
@@ -56,8 +71,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right">Start eating well</a>
-            <a href="#" class="btn btn--otline">Learn more &darr;</a>
+            <a href="#pricing" class="btn btn--full margin-right"
+              >Start eating well</a
+            >
+            <a href="#howitworks" class="btn btn--otline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-img">
                 <img
@@ -507,7 +524,7 @@
               </li>
             </ul>
             <div class="plan-btn">
-              <a href="#" class="btn btn--full">Start eating well</a>
+              <a href="#pricing" class="btn btn--full">Start eating well</a>
             </div>
           </div>
           <div class="pricing-plane pricing-plane--complete">
@@ -678,7 +695,8 @@
             </li>
           </ul>
           <p class="copyright">
-            Copyright &copy; 2024 by Omnifood Inc. All rights reserved
+            Copyright &copy; <span class="year">2024</span> by Omnifood Inc. All
+            rights reserved
           </p>
         </div>
         <div class="address">
@@ -725,13 +743,5 @@
         </nav>
       </div>
     </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
