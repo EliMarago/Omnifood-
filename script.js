@@ -3,7 +3,6 @@
 const yearE = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearE.textContent = currentYear;
-console.log(currentYear);
 
 /* Navigation mobile*/
 
